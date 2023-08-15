@@ -208,23 +208,3 @@ section p{
     padding: 4px 8px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-@media screen and (max-width:680px){
-
-	.container{
-		width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-	}
-	.isi{
-		width: 85%;
-	}
-
-    #keliling{
-        width: 80%;
-    }
-
-    #reset, #kembali{
-        margin-left: 180px;
-    }
-}

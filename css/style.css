@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+body {
+    font-family:'Josefin Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 142vh;
+
+}
+#headerNavigation {
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background: #6096B4;
+    border-radius: 10px;
+    padding: 3px 120px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+
+.dropdown{
+    width: max-content;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#headerTitle {
+  text-align: center;
+  padding: 15px;
+}
+#subtitle{
+    padding-top: 10px;
+}
+.isi {
+    width: 450px;
+    background: #F9F5F6;
+    height: 100%;
+    box-shadow: 0 0 30px #6096B4;
+}
+#luas {
+   text-align: center;
+   border: 1px solid #93BFCF;
+   box-shadow: 0 0 5px #6096B4;
+   margin: 0 10px 15px 10px;
+   opacity: 0;
+   height: 109vh;
+   visibility: hidden;
+}
+
+#luas:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+    
+#ls {
+    background-color: #F2BED1;
+    padding: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.rumus {
+    text-align: left;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6096B4;
+    line-height: 20px;
+}
+.L{
+    text-align: center;
+}
+#hitungluas {
+    padding: 10px;
+}
+
+#hitung{
+    border-radius: 20px;
+    background: #F2BED1;
+    cursor: pointer;
+    color: black;
+    border: 3px solid #6096B4;
+    font-size: 12px;
+    padding: 5px 18px;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#reset {
+    margin-left: 350px;
+    border-radius: 20px;
+    background: #6096B4;
+    border: 4px solid #F2BED1;
+    cursor: pointer;
+    color: black;
+    font-size: 12px;
+    padding: 4px 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#alas,
+#tinggi{
+    background-color: #f8dbe6;
+    border: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+#output{
+    font-size: 13px;
+}
+
+#keliling {
+    text-align: center;
+    border: 1px solid #93BFCF;
+    box-shadow: 0 0 5px #6096B4;
+    margin: 0 10px 15px 13px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #F9F5F6;
+    position: absolute;
+    height: 102vh;
+    top: 38%;
+}
+#ks {
+    background-color: #F2BED1;
+    padding: 10px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#keliling:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+section p{
+    font-size: 13px;
+}
+
+#hitungkeliling {
+    padding: 10px;
+}
+#jumlah{
+    border-radius: 20px;
+    background: #F2BED1;
+    color: black;
+    border: 3px solid #6096B4;
+    font-size: 12px;
+    padding: 5px 18px;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#sisiA,
+#sisiB,
+#sisiC {
+    background-color: #f8dbe6;
+    border: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+#out{
+    font-size: 13px;
+}
+
+#kembali {
+    margin-left: 350px;
+    border-radius: 20px;
+    background: #6096B4;
+    border: 4px solid #F2BED1;
+    cursor: pointer;
+    color: black;
+    font-size: 12px;
+    padding: 4px 8px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@media screen and (min-width: 450px) {
+    .container {
+        width: 100%;
+        height: 820px;
+    }
+    #keliling {
+       top: 40%;
+       height: auto;
+    }
+ }
+
+ @media screen and (min-width: 800px) {
+    .container {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ }
+@media screen and (max-width: 922px) {
+    .container {
+        width: 100%;
+        height: 820px;
+    }
+}
+
+
+
+ 

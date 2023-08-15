@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="isi">
+            <header>
+                <!-- TITLE -->
+               <section id="headerTitle">
+                   <h1>Welcome to Katik</h1>
+                   <p id="subtitle">Hai Guys, Selamat datang di Katik :]</p>
+                   <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+               </section>
+           <!-- NAV SECTION -->
+               <section id="headerNavigation">
+                   <nav id="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Segitiga</a>
+                        <ul class="dropdown">
+                            <li><a href="#luas">Luas Segitiga</a></li>
+                            <li><a href="#keliling">Keliling Segitiga</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#jajargenjang">Jajar Genjang</a></li>
+                    </ul>
+                   </nav>
+               </section>
+           </header>
+           <main>
+               <section id="luas" class="luas">
+                <p id="ls">Luas Segitiga</p>
+                <img src="https://4.bp.blogspot.com/-znBnD24_wso/XAqKZydDFUI/AAAAAAAABYM/JUNZNaPcfZ0Up_6YVF5Bk1B0m_aXYnAEgCLcBGAs/s1600/segitiga01.png" alt="ini segitiga" width="170px" height="120px">
+                <section class="rumus">
+                <p>Rumus Luas Segitiga yaitu:</p>
+                <p class="L">L=1/2 x a x t</p>
+                <p>Di mana:</p>
+                <p>L = Luas</p>
+                <p>a = Panjang Alas</p>
+                <p>t = tinggi</p>
+                </section>
+                <form id="hitungluas">
+                    <p>Hitung Luas Segitiga</p>
+                    <label for="alassegitiga"></label><br>
+                    <input type="number" id="alas" placeholder="Nilai Alas" value=""><br>
+                    <label for="tinggisegitiga"></label><br>
+                    <input type="number" id="tinggi" placeholder="Nilai Tinggi" value=""><br>
+                    <button id="hitung">Hitung</button><br>
+                    <input type="Reset" id="reset">
+                    <div id="output"></div>
+                </form>  
+                </section>
+                <section id="keliling" class="keliling">
+                    <p id="ks">Keliling Segitiga</p>
+                    <img src="https://4.bp.blogspot.com/-znBnD24_wso/XAqKZydDFUI/AAAAAAAABYM/JUNZNaPcfZ0Up_6YVF5Bk1B0m_aXYnAEgCLcBGAs/s1600/segitiga01.png" alt="ini segitiga" width="170px" height="120px">
+                    <section class="rumus">
+                    <p>Rumus Keliling Segitiga yaitu:</p>
+                    <p class="L">K = S1 + S2 +S3</p>
+                    <p>Di mana:</p>
+                    <p>K = Keliling</p>
+                    <p>S1 = Sisi A</p>
+                    <p>S2 = Sisi B</p>
+                    <p>S3 = Sisi C</p>
+                    </section>
+                    <form id="hitungkeliling">
+                        <p>Hitung Keliling Segitiga</p>
+                        <label for="sisiA"></label><br>
+                        <input type="number" id="sisiA" placeholder="Nilai Sisi A" value=""><br>
+                        <label for="sisiB"></label><br>
+                        <input type="number" id="sisiB" placeholder="Nilai Sisi B" value=""><br>
+                        <label for="sisiC"></label><br>
+                        <input type="number" id="sisiC" placeholder="Nilai Sisi C" value=""><br>
+                        <button id="jumlah">Hitung</button><br>
+                        <input type="Reset" id="kembali">
+                        <div id="out"></div>
+                    </form>  
+                </section>
+           </main>
+        </div>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>

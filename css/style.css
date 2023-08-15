@@ -79,7 +79,7 @@ ul li:hover ul.dropdown {
    box-shadow: 0 0 5px #6096B4;
    margin: 0 10px 15px 10px;
    opacity: 0;
-   height: 109vh;
+   height: 100vh;
    visibility: hidden;
 }
 
@@ -88,7 +88,6 @@ ul li:hover ul.dropdown {
     visibility: visible;
 }
 
-    
 #ls {
     background-color: #F2BED1;
     padding: 10px;
@@ -158,7 +157,7 @@ ul li:hover ul.dropdown {
     visibility: hidden;
     background-color: #F9F5F6;
     position: absolute;
-    height: 102vh;
+    height: 104vh;
     top: 38%;
 }
 #ks {
@@ -215,33 +214,6 @@ section p{
     padding: 4px 8px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-
-@media screen and (min-width: 450px) {
-    .container {
-        width: 100%;
-        height: 820px;
-    }
-    #keliling {
-       top: 40%;
-       height: auto;
-    }
- }
-
- @media screen and (min-width: 800px) {
-    .container {
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
- }
-@media screen and (max-width: 922px) {
-    .container {
-        width: 100%;
-        height: 820px;
-    }
-}
-
 
 
  
